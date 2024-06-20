@@ -1,0 +1,136 @@
+    1  cd
+    2  ls
+    3  cd Escritorio/
+    4  git config --global user.name "KJGARCES"
+    5  git config --global user.email "kjgarces@puce.edu.ec"
+    6  git config --global core.autocrlf true
+    7  git config --global init.defaultBranch main
+    8  git config --global core.editor "nano -w"
+    9  git config --global init.defaultBranch main
+   10  git config --global --edit
+   11  git config --list
+   12  ls
+   13  mkdir planets
+   14  cd planets
+   15  git init
+   16  ls
+   17  ls -a
+   18  cd planets
+   19  ls
+   20  nano mars.txt
+   21  nano mars.txt
+   22  ls
+   23  cat mars.txt
+   24  git status
+   25  git add mars.txt
+   26  git status
+   27  git commit -m "Start notes on Mars as a base"
+   28  git status
+   29  git log
+   30  nano mars.txt
+   31  cat mars.txt
+   32* 
+   33* 
+   34* 
+   35  git add mars.txt
+   36  git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+   37  nano mars.txt
+   38  cat mars.txt
+   39  git diff
+   40  git add mars.txt
+   41  git diff
+   42  git diff --staged
+   43  git commit -m "Discuss concerns about Mars' climate for Mummy"
+   44   git status
+   45  git log
+   46  git log -1
+   47  git log --oneline
+   48  git log --oneline --graph
+   49  mkdir spaceships
+   50  git status
+   51  git add spaceships
+   52  git status
+   53  git add <directory-with-files>
+   54  touch spaceships/apollo-11 spaceships/sputnik-1
+   55  git status
+   56  git add spaceships
+   57  git status
+   58   git commit -m "Add some initial thoughts on spaceships"
+   59  git commit -m "my recent changes"
+   60  git init myfile.txt
+   61  git commit -m "my recent changes"
+   62  git add myfile.txt
+   63  nano mars.txt
+   64  cat mars.txt
+   65  git diff HEAD mars.txt
+   66  git diff HEAD~1 mars.txt
+   67  git show HEAD~3 mars.txt
+   68  git diff dd5ec512c679d584450afa9229a4c573d21aa42c mars.txt
+   69  git diff dd5ec51 mars.txt
+   70  git status
+   71  git checkout HEAD mars.txt
+   72  cat mars.txt
+   73  git checkout dd5ec51 mars.txt
+   74  cat mars.txt
+   75  git status
+   76  git add myfile.txt
+   77  git add .
+   78  git init
+   79  git add .
+   80  git commit -m "Initial commit"
+   81  git add myfile.txt
+   82  git add myfile.txt
+   83  git commit -m "Added myfile.txt"
+   84  ls -ld myfile.txt
+   85  git add myfile.txt
+   86  git status
+   87  git commit -m "Added myfile.txt"
+   88  git checkout HEAD mars.txt
+   89  mkdir results
+   90  touch a.csv b.csv c.csv results/a.out results/b.out
+   91  git status
+   92  nano .gitignore
+   93  nano .gitignore
+   94  git status
+   95  git add .gitignore
+   96  git add .myfile.txt/
+   97  git commit -m "Ignore data files and the results folder"
+   98  git status
+   99  git add a.csv
+  100  git status --ignored
+  101   mkdir planets
+  102  cd planets
+  103  git init
+  104   git remote add origin git@github.com:KJGARCES/planets.git
+  105  git remote -v
+  106  ls -al ~/.ssh
+  107  ssh-keygen -t ed25519 -C "kjgarces@puce.edu.ec"
+  108  ls -al ~/.ssh
+  109  ssh -T git@github.com
+  110  cat ~/.ssh/id_ed25519.pub
+  111  ssh -T git@github.com
+  112  git push origin main
+  113  git add .
+  114  git commit -m "Initial commit"
+  115  git remote add origin https://github.com/KJGARCES/planets.git
+  116  git remote -v
+  117  git push -u origin main
+  118  git branch
+  119  git checkout -b main
+  120  mkdir planets
+  121  cd planets
+  122  git init
+  123  git remote add origin git@github.com:KJGARCES/planets.git
+  124  git remote -v
+  125  ls -al ~/.ssh
+  126   ssh-keygen -t ed25519 -C "kjgarces@puce.edu.ec"
+  127  ls -al ~/.ssh
+  128  ssh -T git@github.com
+  129  cat ~/.ssh/id_ed25519.pub
+  130  ssh -T git@github.com
+  131  git push origin main
+  132  git config --global http.proxy http://user:password@proxy.url
+  133  git config --global https.proxy https://user:password@proxy.url
+  134  git config --global --unset http.proxy
+  135  git config --global --unset https.proxy
+  136  history > Github-trabajo.txt
